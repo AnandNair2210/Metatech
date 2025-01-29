@@ -51,7 +51,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    min-width: 150px;
+}
 
+.dropdown:hover a {
+    /* background: rgb(77, 77, 245); */
+    /* color: white; */
+}
+.dropdown-menu a {
+    padding: 10px;
+    color: white;
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 /* Hero Section */
 .hero {
     /* background: linear-gradient(to right, #0073e6, #00b3ff); */
