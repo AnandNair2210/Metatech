@@ -575,8 +575,10 @@ footer {
 }
 
 .footer-logo {
-    width: 200px; /* Adjust as needed */
+    width: 250px; /* Adjust as needed */
     margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
 }
 
 .footer-left p {
@@ -594,12 +596,23 @@ footer {
 }
 
 .social-icons img {
-    width: 35px; /* Adjust size of social media icons */
+    width: 35px; 
+    border: #fff;
+    border-style: solid;
+    border-radius:15%;
+    padding: 5px;
 }
 
 .footer-container h3 {
     font-size: 22px;
     margin-bottom: 10px;
+}
+.footer-center h3{
+    padding-left: 290px;
+}
+
+.footer-center li{
+    padding-left: 234px;
 }
 
 .footer-container ul {
@@ -619,4 +632,8 @@ footer {
 
 .footer-container ul li a:hover {
     text-decoration: underline;
+}
+
+.footer-right{
+    padding-left: 350px;
 }
