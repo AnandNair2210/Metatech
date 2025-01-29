@@ -10,47 +10,107 @@ body {
     line-height: 1.5;
     color: #333;
 }
-
 .container {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0;
 }
 
-/* Header */
+.logo{
+    /* background-color: white; */
+    padding: 10px;
+}
 .main-header {
-    background: #ffffff;
-    padding: 1rem 0;
+    width: 100%;
+    /* background-color: #2f3b44; */
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px; 
+    width: 100%;
 }
 
-.logo {
-    max-height: 50px; /* Adjust size as needed */
-}
 
 .navigation {
-    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
 }
 
 .navigation li {
-    margin: 0 0.5rem;
+    position: relative;
 }
 
-.navigation li a {
-    color: #000000;
+.navigation a {
     text-decoration: none;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #2f3b44;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
 }
 
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1d262f;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    min-width: 250px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.submenu {
+    position: relative;
+}
+
+.sub-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    min-width: 200px;
+}
+
+.submenu:hover .sub-submenu {
+    display: block;
+    opacity: 1;
+}
+/* 
+.dropdown-menu li {
+    border-bottom: 1px solid #555;
+} */
+
+.dropdown-menu a {
+    padding: 12px;
+    color: #2f3b44;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background: #4d5c65;
+    color: white;
+    transition: .4s;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
 
 /* Hero Section */
 .hero {
