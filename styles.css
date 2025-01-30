@@ -82,17 +82,16 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     min-width: 200px;
+
 }
 
 .submenu:hover .sub-submenu {
     display: block;
     opacity: 1;
+    border: 1px solid grey;
+    border-radius: 5px;
+    
 }
-/* 
-.dropdown-menu li {
-    border-bottom: 1px solid #555;
-} */
-
 .dropdown-menu a {
     padding: 12px;
     color: #2f3b44;
@@ -129,14 +128,13 @@ body {
 }
 
 .hero-content{
-    margin-top: 50px;
     
 }
 
 .hero h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .hero p {
@@ -147,23 +145,21 @@ body {
 }
 
 .cta-buttons button{
-    background: #007FFF;
-    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
     border: none;
-    padding: 0.8rem 1.5rem;
-    margin: 0 0.5rem;
-    font-size: 1.4rem;
     cursor: pointer;
+    background: linear-gradient(to right, #1f7cd8, #0056b3);
+    transition: background-position 0.6s ease-in-out;
     border-radius: 5px;
-    font-family: "Montserrat", serif;
 }
 
 .cta-buttons button:hover {
-    background: #fff;
-    color: #007FFF;
-    border: #007FFF 2px solid;
+    background: linear-gradient(to right,  #0056b3,#1f7cd8);
+    transition: .6s;
 }
-
 /* Expertise Section */
 
 .expertise {
@@ -219,48 +215,36 @@ body {
     border-radius: 2.5px;
 }
 
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 40px; /* Reduce vertical spacing */
-    column-gap: 20px; /* Add some horizontal spacing */
+    grid-template-columns: repeat(2, 1fr); /* Ensures two equal columns */
+    gap: 40px; /* Equal spacing between rows and columns */
     justify-content: center;
-    align-items: start; /* Align items to the top */
+    align-items: center; /* Centers content vertically */
+    padding: 20px; /* Adds uniform padding */
 }
 
 .grid-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; /* Ensure grid items only take necessary height */
+    height: auto; /* Ensures the height remains flexible */
 }
-
 
 .grid-item img {
     display: block;
     width: 100%;
     height: auto;
-    max-width: 400px; /* Maintain consistent image width */
+    max-width: 350px; /* Ensures images have consistent width */
     border-radius: 10px; /* Optional rounded corners */
-    margin: 0;
-    padding: 0;
 }
 
-
+/* Ensuring full width while keeping content centered */
 .container {
-    padding: 0 !important;
+    max-width: 1200px; /* Adjusts for better responsiveness */
     margin: 0 auto;
-    width: 100%;
+    padding: 0 20px;
 }
-
-/* .grid-item {
-    border: 1px solid red;
-}
-
-.grid-item img {
-    outline: 1px dashed blue; 
-} */
 
 
 
