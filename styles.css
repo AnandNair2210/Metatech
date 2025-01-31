@@ -585,6 +585,9 @@ body {
     gap: 20px;
     border-radius: 10px;
     margin-left: 20px;
+    
+    border: 2px solid rgba(2, 2, 26, 0.61);
+    padding: 10px;
 }
 .left-section h5 {
     margin-bottom: 0.5rem;
@@ -616,6 +619,8 @@ body {
     text-align: center;
     background: #fff;
     color: #000000c7;
+    margin: 10px;
+    width: 100%;
 }
 .contact-form{
     display: flex;
@@ -624,7 +629,8 @@ body {
 }
 .contact-box{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;;
+    
 }
 
 /* Right Section - Contact Form */
