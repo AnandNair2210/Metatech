@@ -172,6 +172,10 @@ h1, h2, h3 {
     color: #000000;
 }
 
+span{
+    color: #1000f4;
+}
+
 .services-container {
     display: flex;
     flex-wrap: wrap;
