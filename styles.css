@@ -53,6 +53,12 @@ body {
     font-size: 16px;
 }
 
+#nav-hover :hover{
+    background: #2f3b44;
+    color: white;
+    transition: .4s;
+}
+
 /* Dropdown Menu Styling */
 .dropdown-menu {
     position: absolute;
