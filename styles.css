@@ -762,9 +762,9 @@ body {
     }
 
 #borderya{
-    border: 2px solid rgba(2, 2, 26, 0.61);
+    border: 1.6px solid rgba(2, 2, 26, 0.61);
     border-radius: 10px;
-    padding: 10px;
+    padding: 8px;
     border-color: white;
 }
 .heading{

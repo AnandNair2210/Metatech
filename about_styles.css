@@ -3,7 +3,7 @@ body, h1, h2, p, ul, li, a, button, address {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    text-align: center;
 }
 body {
     margin: 0;
@@ -14,9 +14,6 @@ body {
     background-color: #d9e6f4 ;
 }
 
-h1, h2, h3 {
-    text-align: center;
-}
 
 .container {
     width: 100%;
