@@ -58,10 +58,8 @@ body {
     color: white;
     transition: .4s;
 }
+
 /* Dropdown Menu Styling */
-
-
-
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -462,6 +460,7 @@ body {
 .card2 a {
     display: block;
     text-decoration: none;
+    color: #385761;
     font-weight: bold;
     padding: 10px;
 }
@@ -583,17 +582,14 @@ body {
     /* margin : 0; */
     box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
     width: 100%;
     background-size:contain;
 }
-
-/* Left Section */
 .left-section {
-    width: 48%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -626,18 +622,8 @@ body {
     border: 2px solid black;
 }
 
-.contact-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-}
-
 .contact-info {
     padding: 10px;
-    border: 1px solid black;
-    width: 48%;
-    padding: 20px;
     border: 1px solid black;
     font-size: 16px;
     text-align: center;
@@ -663,24 +649,23 @@ body {
     height: 100%;
     display: flex;
     padding: 20px;
-    border: 2px solid rgba(2, 2, 26, 0.61);
-    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-.bor {
-    width: 100%;
-    padding: 30px;
-    border-radius: 10px;
+.right-section h2 {
     text-align: center;
+    margin-bottom: 15px;
+    color: #0a09099d;
 }
 
-.input-box, .message-box {
+.input-box {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid rgba(2, 2, 26, 0.61);
-    border-radius: 10px;
     margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid rgba(2, 2, 26, 0.61);
+    font-size: 16px;
+    border-radius: 10px;
 }
 
 .message-box {
@@ -690,47 +675,27 @@ body {
     border: 2px solid rgba(2, 2, 26, 0.61);;
     font-size: 16px;
     resize: none;
+    border-radius: 10px;
 }
 
 .submit-btn {
     width: 100%;
     padding: 12px;
-    border: 2px solid rgba(2, 2, 26, 0.61);
-    background: black;
+    border: 2px solid rgba(2, 2, 26, 0.61);;
+    background:black;
     color: #d7d7d7;
     cursor: pointer;
     font-size: 18px;
+    transition: 0.3s;
+    border-radius: 10px;
     font-weight: bold;
     margin-top: 20px;
 }
 
 .submit-btn:hover {
-    background: #a9a9a9;
-    color: black;
+    background:  #a9a9a9;
+    color: rgb(0, 0, 0);
 }
-
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 1024px) {
-    .containering {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left-section, .right-section {
-        width: 100%;
-        margin: 0;
-    }
-
-    .contact-grid {
-        flex-direction: column;
-    }
-
-    .contact-info {
-        width: 100%;
-    }
-}
-
-
 /* FOOTER */
 /* Footer General Styles */
 .main-footer {
