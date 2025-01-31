@@ -15,8 +15,7 @@ body {
     background: linear-gradient(to right,silver, white, silver);
 }
 .container {
-    width: 100%;
-    padding: 0;
+    width: 100%
 }
 
 .logo{
@@ -441,12 +440,15 @@ body {
 }
 .card2 {
     /* background: rgba(31, 186, 192, 0.35); */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
     border: 2px solid #00000084;
     text-align: center;
     padding: 20px;
+    transition: transform 0.4s ease-in-out; /* Apply transition to transform */
+    /* transition: font-size 0.4s ease-in-out; Apply transition to transform */
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 .card2 h3 {
     font-size: 22px;
@@ -460,26 +462,117 @@ body {
 .card2 a {
     display: block;
     text-decoration: none;
-    color: #385761;
     font-weight: bold;
     padding: 10px;
+    transition: font-size 0.4s ease-in-out;
+    color: blue;
 }
+
+
+.card2:hover {
+    transform: translateY(-10px);
+}
+
+
+.card2 a:hover {
+    font-size: 1.2em; 
+}
+
 .card2 {
-    transition: transform 0.4s ease-in-out; /* Apply transition to transform */
-    /* transition: font-size 0.4s ease-in-out; Apply transition to transform */
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #00000084;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Background Image with Reduced Opacity */
+.card2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0.4;  /* Reduce opacity of only the image */
+    z-index: -1; /* Send it behind the content */
+}
+
+#cardA::before{
+    background-image: url('images/img1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#cardB::before{
+    background-image: url('images/Rectangle\ 3\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+}
+#cardC::before{
+    background-image: url('images/img2.webp');
+    background-size: cover;
+    background-position: center;
+}
+#cardD::before{
+    background-image: url('images/img3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#cardE::before{
+    background-image: url('images/img4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#cardF::before{
+    background-image: url('images/img5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#cardG::before{
+    background-image: url('images/Rectangle\ 3\ \(4\).png');
+    background-size: cover;
+    background-position: center;
+}
+#cardH::before{
+    background-image: url('images/Rectangle\ 3\ \(5\).png');
+    background-size: cover;
+    background-position: center;
+}
+#cardI::before{
+    background-image: url('images/Rectangle\ 6.png');
+    background-size: cover;
+    background-position: center;
+}
+/* Ensure text remains fully visible */
+.card2 h3,
+.card2 p,
+.card2 a {
+    position: relative;
+    z-index: 1;
+    color: black; /* Adjust if needed */
+}
+
+/* Hover Effects */
+.card2 {
+    transition: transform 0.4s ease-in-out;
 }
 
 .card2:hover {
     transform: translateY(-10px);
 }
+
 .card2 a {
     transition: font-size 0.4s ease-in-out;
     color: blue;
 }
 
 .card2 a:hover {
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
+
 .underline {
     border-bottom: 3px solid #007FFF;
     border-radius: 2.5px;
