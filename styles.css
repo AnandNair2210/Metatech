@@ -359,6 +359,10 @@ body {
     position: relative;
     z-index: 2;
   }
+
+  .holographic-card p{
+    font-weight: bold;
+  }
   
   .holographic-card::before {
     content: '';
@@ -791,6 +795,13 @@ body {
       text-align:start;
       font-weight: 500;
     }
+
+#borderya{
+    border: 2px solid rgba(2, 2, 26, 0.61);
+    border-radius: 10px;
+    padding: 10px;
+    border-color: white;
+}
 .heading{
     padding-top: 30px;
     text-align: center;
