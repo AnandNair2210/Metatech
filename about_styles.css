@@ -1,0 +1,385 @@
+/* General Styles */
+body, h1, h2, p, ul, li, a, button, address {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #d9e6f4 ;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+.logo{
+    /* background-color: white; */
+    padding: 10px;
+}
+.main-header {
+    width: 100%;
+    /* background-color: #2f3b44; */
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; 
+    width: 100%;
+}
+
+
+.navigation {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    position: relative;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #2f3b44;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+}
+
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    min-width: 250px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+#nav-hover :hover{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s;
+}
+
+.submenu {
+    position: relative;
+}
+
+.sub-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    min-width: 200px;
+
+}
+
+.submenu:hover .sub-submenu {
+    display: block;
+    opacity: 1;
+    border: 1px solid grey;
+    border-radius: 5px;
+    
+}
+.dropdown-menu a {
+    padding: 12px;
+    color: #000000;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background: #4D5C65;
+    color: white;
+    transition: .4s;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+
+
+
+
+/* About Section */
+.about {
+    padding: 3rem 2rem;
+    background: #d9e6f4;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.about p{
+    font-size: 20px;
+    padding:  10px  40px;
+}
+.about h2{
+    font-size: 40px;
+}
+
+.about img{
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0.347);
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Services Section */
+.services {
+    background: #d9e6f4;
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service-item {
+    background: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* rest */
+.containering {
+    /* margin : 0; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #d9e6f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.left-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.left-section h5 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+
+}
+.bor{
+    border: 2px solid rgba(17, 12, 12, 0.737);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.map-container iframe {
+    width: 100%;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.contact-info {
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    text-align: center;
+    background: #fff;
+    color: #000000c7;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* Right Section - Contact Form */
+.right-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.right-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #0a09099d;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid rgba(2, 2, 26, 0.61);
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.message-box {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid rgba(2, 2, 26, 0.61);;
+    font-size: 16px;
+    resize: none;
+    border-radius: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(2, 2, 26, 0.61);;
+    background:black;
+    color: #d7d7d7;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background:  #a9a9a9;
+    color: rgb(0, 0, 0);
+}
+
+
+/* FOOTER */
+/* Footer General Styles */
+.main-footer {
+    background-color: rgba(4, 16, 28, 0.695);
+    color: #fff;
+    padding: 2rem 0;
+  }
+    .metatech{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  .icon{
+      margin: 5px;
+      height: 20px;
+      width: 20px;
+      padding: 5px;
+      border: solid 2px white;
+      border-radius: 5px;
+  }
+  .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    
+    .footer-column {
+    flex: 1; /* Ensures all columns have equal width */;
+    text-align: left;
+}
+.footer-column p{
+    margin: 10px ;
+}
+
+.footer-column h3 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #f2f2f2;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column li {
+      margin-bottom: 1rem;
+      font-size: 13px;  
+    }
+    
+    .footer-column a {
+        color: #80dfff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    
+    .footer-column a:hover {
+        color: #fff;
+    }
+    
+    .middle-column {
+      text-align:start;
+      font-weight: 500;
+    }
