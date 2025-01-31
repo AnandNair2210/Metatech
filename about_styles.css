@@ -14,10 +14,9 @@ body {
     background-color: #d9e6f4 ;
 }
 
-h1, h2, h3 {
+.middle{
     text-align: center;
 }
-
 .container {
     width: 100%;
     padding: 0;
@@ -362,6 +361,7 @@ span{
     .footer-column {
     flex: 1; /* Ensures all columns have equal width */;
     text-align: left;
+    padding-left: 40px;
 }
 .footer-column p{
     margin: 10px ;
@@ -386,7 +386,7 @@ span{
     .footer-column a {
         color: #80dfff;
         text-decoration: none;
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
     
     .footer-column a:hover {
@@ -404,4 +404,10 @@ span{
 .heads{
 
     padding-bottom: 30px;
+}
+#borderya{
+    /* border: 1px solid rgba(2, 2, 26, 0.61); */
+    border-radius: 10px;
+    padding: 5px;
+    border-color: white;
 }
