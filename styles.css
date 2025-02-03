@@ -123,8 +123,9 @@ body {
 .pic{
     height: 80vh;
     position: relative;
-    background-image: url("https://imgs.search.brave.com/lUOac08WUIrtc3WqP6DcHt30mubtscxPj2b-2MGcxT4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3RlZWwub3JnL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIwLzA3/L3N0ZWVsLW1hbnVm/YWN0dXJpbmctbW9s/dGVuLmpwZw");
-    opacity: .7;
+    background-image: url("images/bgm7.jpg");
+    background-size: cover;
+    opacity: .9;
 
     background-size: cover;
     background-position: center;
@@ -156,13 +157,15 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: left;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
     color: #000000;
     font-weight: bold;
+    text-align: left;
 }
 
 .cta-buttons button{
@@ -438,75 +441,89 @@ body {
 }
 
 
-/* Services Section */
-.serv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-.services{
-    background-color:#f5f5f5;
 
+/* services */
+
+
+.services {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
 }
+
+.heading {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.underline {
+    display: inline-block;
+    border-bottom: 3px solid cyan;
+    padding-bottom: 5px;
+}
+
+/* Grid Layout */
 .container12345 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
     max-width: 1200px;
-    padding: 20px;
-}
-.card2 {
-    /* background: rgba(31, 186, 192, 0.35); */
-    border: 2px solid #00000084;
-    text-align: center;
-    padding: 20px;
-    transition: transform 0.4s ease-in-out; /* Apply transition to transform */
-    /* transition: font-size 0.4s ease-in-out; Apply transition to transform */
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-.card2 h3 {
-    font-size: 22px;
-    font-weight: bold;
-    padding: 5px;
-}
-.card2 p {
-    padding: 15px;
-    font-size: 14px;
-}
-.card2 a {
-    display: block;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px;
-    transition: font-size 0.4s ease-in-out;
-    color: blue;
+    margin: 0 auto;
 }
 
+/* Card Styling */
+.card2 {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(4, 3, 49, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+}
 
 .card2:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Card Titles */
+.card2 h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Card Descriptions */
+.card2 p {
+    color: #060404;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Explore More Link */
+.card2 a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    color: white;
+    background: rgb(0, 76, 255);
+    border-radius: 5px;
+    transition: all 0.3s;
+}
 
 .card2 a:hover {
-    font-size: 1.2em; 
+    background: #ffffff; 
+    color: rgb(6, 67, 125);
 }
 
-.card2 {
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #00000084;
-    text-align: center;
-    padding: 20px;
-    overflow: hidden;
-}
-
-/* Background Image with Reduced Opacity */
+/* Card Background Images */
 .card2::before {
     content: "";
     position: absolute;
@@ -514,82 +531,29 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    
-    opacity: 0.4;  /* Reduce opacity of only the image */
-    z-index: -1; /* Send it behind the content */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
 }
 
-#cardA::before{
-    background-image: url('images/img1.jpg');
-    background-size: cover;
-    background-position: center;
-}
-#cardB::before{
-    background-image: url('images/Rectangle\ 3\ \(1\).png');
-    background-size: cover;
-    background-position: center;
-}
-#cardC::before{
-    background-image: url('images/img2.webp');
-    background-size: cover;
-    background-position: center;
-}
-#cardD::before{
-    background-image: url('images/img3.jpg');
-    background-size: cover;
-    background-position: center;
-}
-#cardE::before{
-    background-image: url('images/img4.jpg');
-    background-size: cover;
-    background-position: center;
-}
-#cardF::before{
-    background-image: url('images/img5.jpg');
-    background-size: cover;
-    background-position: center;
-}
-#cardG::before{
-    background-image: url('images/Rectangle\ 3\ \(4\).png');
-    background-size: cover;
-    background-position: center;
-}
-#cardH::before{
-    background-image: url('images/Rectangle\ 3\ \(5\).png');
-    background-size: cover;
-    background-position: center;
-}
-#cardI::before{
-    background-image: url('images/Rectangle\ 6.png');
-    background-size: cover;
-    background-position: center;
-}
-/* Ensure text remains fully visible */
-.card2 h3,
-.card2 p,
-.card2 a {
-    position: relative;
-    z-index: 1;
-    color: black; /* Adjust if needed */
+#cardA::before { background-image: url('images/img1.jpg'); }
+#cardB::before { background-image: url('images/img2.webp'); }
+#cardC::before { background-image: url('images/img3.jpg'); }
+#cardD::before { background-image: url('images/img4.jpg'); }
+#cardE::before { background-image: url('images/img5.jpg'); }
+#cardF::before { background-image: url('images/bgm4.avif'); }
+#cardG::before { background-image: url('images/industry_image.jpg'); }
+#cardH::before { background-image: url('images/bgm10.jpg'); }
+#cardI::before { background-image: url('images/rectangle\ 11.jpeg'); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container12345 {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* Hover Effects */
-.card2 {
-    transition: transform 0.4s ease-in-out;
-}
-
-.card2:hover {
-    transform: translateY(-10px);
-}
-
-.card2 a {
-    transition: font-size 0.4s ease-in-out;
-    color: blue;
-}
-
-.card2 a:hover {
-    font-size: 1.2em;
-}
 
 .underline {
     border-bottom: 3px solid #007FFF;
@@ -679,6 +643,8 @@ body {
         margin-left: 0.5rem;
     }
 }
+
+/* Contact Us */
 .contactinfo{
     /* background-image: none; */
     background: white;
@@ -885,3 +851,15 @@ body {
 
     padding-bottom: 30px;
 }
+
+.trust{
+    display: flex;
+    flex-direction: column;
+}
+.trust img{
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
