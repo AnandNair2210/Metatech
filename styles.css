@@ -185,9 +185,9 @@ body {
 .pic{
     height: 80vh;
     position: relative;
-    /* opacity: .7; */
-    /* background: linear-gradient(to right, #1f7cd8, #0056b3 , #1f7cd8); */
-    background: linear-gradient(45deg, #1b3b6f, #468faf, #a3cef1);
+    background-image: url("images/bgm7.jpg");
+    background-size: cover;
+    opacity: .9;
 
     background-size: cover;
     background-position: center;
@@ -222,13 +222,15 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: left;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: white;
+    color: #000000;
     font-weight: bold;
+    text-align: left;
 }
 
 .cta-buttons button{
@@ -557,41 +559,79 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-}
-.services{
-    background-color:#f5f5f5;
 
+
+/* services */
+
+
+.services {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
 }
+
+.heading {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.underline {
+    display: inline-block;
+    border-bottom: 3px solid cyan;
+    padding-bottom: 5px;
+}
+
+/* Grid Layout */
 .container12345 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
     max-width: 1200px;
-    padding: 20px;
+    margin: 0 auto;
 }
+
+/* Card Styling */
 .card2 {
     text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     padding: 20px;
-    transition: transform 0.4s ease-in-out; /* Apply transition to transform */
-    /* transition: font-size 0.4s ease-in-out; Apply transition to transform */
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(4, 3, 49, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
     /* background: linear-gradient(45deg, #0073e6, #cde3ed , #0073e6); */
     
 }
+    position: relative;
+}
+
+.card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Titles */
 .card2 h3 {
     font-size: 22px;
-    font-weight: bold;
-    padding: 5px;
+    color: #000000;
+    margin-bottom: 10px;
 }
+
+/* Card Descriptions */
 .card2 p {
-    padding: 15px;
+    color: #060404;
     font-size: 14px;
+    margin-bottom: 15px;
 }
+
+/* Explore More Link */
 .card2 a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -604,8 +644,12 @@ body {
     transform: translateY(-10px);
     background: none;
     /* color: white; */
+    padding: 8px 15px;
+    color: white;
+    background: rgb(0, 76, 255);
+    border-radius: 5px;
+    transition: all 0.3s;
 }
-
 
 .card2 a:hover {
     font-size: 1.2em; 
@@ -619,9 +663,11 @@ body {
     text-align: center;
     padding: 20px;
     overflow: hidden;
+    background: #ffffff; 
+    color: rgb(6, 67, 125);
 }
 
-/* Background Image with Reduced Opacity */
+/* Card Background Images */
 .card2::before {
     content: "";
     position: absolute;
@@ -629,13 +675,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    
-    opacity: 0.4;  /* Reduce opacity of only the image */
-    z-index: -1; /* Send it behind the content */
-}
-
-#cardA::before{
-    background-image: url('images/img1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -726,6 +765,27 @@ body {
     }
     
 }
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#cardA::before { background-image: url('images/img1.jpg'); }
+#cardB::before { background-image: url('images/img2.webp'); }
+#cardC::before { background-image: url('images/img3.jpg'); }
+#cardD::before { background-image: url('images/img4.jpg'); }
+#cardE::before { background-image: url('images/img5.jpg'); }
+#cardF::before { background-image: url('images/bgm4.avif'); }
+#cardG::before { background-image: url('images/industry_image.jpg'); }
+#cardH::before { background-image: url('images/bgm10.jpg'); }
+#cardI::before { background-image: url('images/rectangle\ 11.jpeg'); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container12345 {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .underline {
     border-bottom: 3px solid #007FFF;
@@ -855,6 +915,8 @@ body {
         margin-left: 0.5rem;
     }
 }
+
+/* Contact Us */
 .contactinfo{
     /* background-image: none; */
     background: white;
@@ -1080,6 +1142,19 @@ body {
 
     padding-bottom: 30px;
 }
+
+.trust{
+    display: flex;
+    flex-direction: column;
+}
+.trust img{
+    padding: 5px;
+    border-radius: 50%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 
 @media (max-width: 1024px) {
     .footer-content {
